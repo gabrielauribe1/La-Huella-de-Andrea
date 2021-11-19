@@ -10,6 +10,7 @@
         android:id="@+id/registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#F17375"
         android:shadowColor="#F17375"
         android:text="@string/registro"
@@ -18,9 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809"
-        app:rippleColor="#F17375"
         app:strokeColor="#F17375"
         tools:ignore="TextContrastCheck" />
 
@@ -28,14 +26,13 @@
         android:id="@+id/login"
         android:layout_width="107dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#F17375"
         android:text="@string/login"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/registro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registro"
-        app:layout_constraintVertical_bias="0.207"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
@@ -59,10 +56,9 @@
         android:fontFamily="sans-serif-light"
         android:text="@string/la_huella_de_andrea"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/registro"
+        app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

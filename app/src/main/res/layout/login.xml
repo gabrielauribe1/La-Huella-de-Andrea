@@ -5,74 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="225dp"
+        android:contentDescription="@string/amigasimg"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/amigas" />
+
     <EditText
         android:id="@+id/editTextTextPasswordlogin"
         android:layout_width="306dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correotext2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:text="@string/contrase_a"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordlogin" />
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddressLogin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddressLogin" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddressLogin"
         android:layout_width="306dp"
         android:layout_height="48dp"
-        android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correotext2"
         tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/correotext2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:text="@string/correo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddressLogin" />
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddressLogin"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/login2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#F17375"
         android:text="@string/login2"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordlogin"
         tools:ignore="TextContrastCheck" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="411dp"
-        android:layout_height="270dp"
-        android:contentDescription="@string/amigasimg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/amigas" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="rosappal">#f17375</color>
+    <color name="blackRosappal">#E56E70</color>
 
 </resources>
