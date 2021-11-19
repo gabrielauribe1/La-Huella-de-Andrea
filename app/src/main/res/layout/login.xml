@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/amigas" />
 
     <EditText
-        android:id="@+id/editTextTextPasswordlogin"
+        android:id="@+id/loginPasswordInput"
         android:layout_width="306dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -35,11 +35,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/contrase_a"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddressLogin"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddressLogin" />
+        app:layout_constraintStart_toStartOf="@+id/loginEmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/loginEmailInput" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddressLogin"
+        android:id="@+id/loginEmailInput"
         android:layout_width="306dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/correo"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddressLogin"
+        app:layout_constraintStart_toStartOf="@+id/loginEmailInput"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordlogin"
+        app:layout_constraintTop_toBottomOf="@+id/loginPasswordInput"
         tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
